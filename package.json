@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/blainesch/zazu-weather#readme",
   "dependencies": {
+    "geocoder": "^0.2.2",
     "geoip-lite": "^1.1.8",
     "public-ip": "^2.0.1",
     "weather-js": "^1.0.2"
