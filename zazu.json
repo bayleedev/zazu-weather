@@ -1,0 +1,34 @@
+{
+  "name": "zazu-weather",
+  "version": "1.0.0",
+  "description": "Get weather information in zazu",
+  "blocks": {
+    "input": [
+      {
+        "id": "DefaultWeather",
+        "type": "PrefixScript",
+        "prefix": "weather",
+        "space": false,
+        "args": "None",
+        "script": "weather.js",
+        "connections": ["DarkSky"]
+      },
+      {
+        "id": "LocationWeather",
+        "type": "PrefixScript",
+        "prefix": "weather",
+        "space": true,
+        "args": "Required",
+        "script": "weather.js",
+        "connections": ["DarkSky"]
+      }
+    ],
+    "output": [
+      {
+        "id": "DarkSky",
+        "type": "OpenInBrowser",
+        "url": "{value}"
+      }
+    ]
+  }
+}

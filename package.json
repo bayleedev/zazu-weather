@@ -1,0 +1,24 @@
+{
+  "name": "zazu-weather",
+  "version": "1.0.0",
+  "description": "Get weather information in zazu",
+  "main": "test.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/blainesch/zazu-weather.git"
+  },
+  "author": "Blaine Schmeisser",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/blainesch/zazu-weather/issues"
+  },
+  "homepage": "https://github.com/blainesch/zazu-weather#readme",
+  "dependencies": {
+    "geoip-lite": "^1.1.8",
+    "public-ip": "^2.0.1",
+    "weather-js": "^1.0.2"
+  }
+}
