@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Get weather information in zazu",
   "main": "test.js",
-  "scripts": {
-    "test": "npm test"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/blainesch/zazu-weather.git"

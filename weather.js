@@ -70,6 +70,7 @@ module.exports = (pluginContext) => {
         const current = response.current
         const currentLocation = response.location.name
         const today = {
+          id: current.date,
           icon: icon(current.skycode),
           title: `Today (${current.day}) in ${currentLocation}`,
           subtitle: `${current.skytext} with the current temp of ${current.temperature}°${degreeType} and feels like ${current.feelslike}°${degreeType}`,
@@ -80,6 +81,7 @@ module.exports = (pluginContext) => {
         for (let index in forecasts) {
           const forecast = forecasts[index]
           days.push({
+            id: forecast.date,
             icon: icon(forecast.skycodeday),
             title: `${forecast.day} in ${currentLocation}`,
             subtitle: `${forecast.skytextday} with a high of ${forecast.high}°${degreeType} and a low of ${forecast.low}°${degreeType}`,
@@ -91,23 +93,3 @@ module.exports = (pluginContext) => {
     })
   }
 }
-
-/*
-searchers:
-> weather
-today
-  > 
-tomorrow
-> weather tulsa
-today
-tomorrow
-
-Configuration:
-{
-  "name": "blainesch/zazu-weather",
-  "variables": {
-    "location": "Tulsa, Ok", // default tries to locate you based on ip
-    "degree": "c" // default is F
-  }
-}
-*/
